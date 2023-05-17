@@ -1,0 +1,114 @@
+body {
+
+   
+
+	font-family: Arial, sans-serif;
+	background-color: #294360;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #172536;
+	color: #fff;
+	padding: 20px;
+}
+h1 {
+    text-align: center;
+
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex; /* added display flex to create a flex container */
+}
+
+nav li {
+	/* removed float property */
+	flex: 1; /* added flex property to distribute space evenly among items */
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #21364e;
+}
+
+header h1 {
+	margin: 20px;
+}
+h2 {
+	
+    text-align: center;
+    color: white;
+}
+h3 {
+    text-align: center;
+    color: white;
+	margin: 40px;
+}
+
+
+main {
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #172536;
+	border: 5px solid #0f1924;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cookie-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.cookie-container {
+	position: relative;
+    transition: transform .2s;
+}
+
+.cookie-container:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+.cookie-container .btn {
+	position: absolute;
+	bottom: -40px; /* Adjust this value to move the button further down */
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #101d2d;
+	color: white;
+	padding: 5px 10px;
+	border: 4px solid #0f1924;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.cookie-container .btn:hover {
+	background-color: #1a314a;
+	color: white;
+}
