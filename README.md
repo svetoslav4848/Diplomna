@@ -1,2 +1,0 @@
-# Diplomna
- Diplomna Rabota
